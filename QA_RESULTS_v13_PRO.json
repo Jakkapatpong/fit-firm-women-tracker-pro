@@ -1,0 +1,222 @@
+{
+  "app": "Fit & Firm Women Tracker Pro",
+  "version_tested": "v12_icon_only_bottomnav",
+  "date": "2026-06-10",
+  "test_environment": {
+    "syntax": "node --check script.js",
+    "dom_simulation": "jsdom 24, Node.js",
+    "asset_validation": "Python PIL + static reference scan"
+  },
+  "automated_checks": [
+    {
+      "name": "Initial render: home view present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bottom nav has 4 buttons",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bottom nav is icon-only visually",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bottom nav buttons have aria-labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme toggle exists on home",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Default theme is light",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme toggle switches to dark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme saved to localStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme can switch back to light",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Profile includes theme segment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All EX image paths exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All SVG fallbacks exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Logo PNG exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Favicon PNG exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Program page renders all 3 phases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 2 locked before Day 1 complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Locked day CTA is disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness green logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness yellow logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness red logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness page opens for Day 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Workout player starts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Workout player has image fallback markup",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Workout reaches finish screen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Finish form fields exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 1 saved complete in LocalStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Progress measurement saved from finish",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "After Day 1 complete, Today moves to Day 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Second workout can reach finish",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 2 saved partial",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 3 remains locked after Day 2 partial",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Settings saved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual progress saved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Report page shows training history",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Export JSON and CSV trigger downloads",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase 2 unlocks when 70% + 2 progress + no severe pain",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase 3 stays locked without phase 2 completion",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset clears LocalStorage state",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "static_asset_checks": {
+    "total_files": 74,
+    "exercise_jpg_count": 32,
+    "exercise_svg_fallback_count": 32,
+    "duplicate_jpgs": {},
+    "missing_local_references": [],
+    "image_dimensions_summary": {
+      "(1254, 1254)": 22,
+      "(720, 720)": 10
+    },
+    "syntax_check": "PASS"
+  },
+  "overall_result": "PASS",
+  "critical_issues_found": 0,
+  "notes": [
+    "Bottom tab is icon-only visually and keeps aria-label/title for accessibility.",
+    "Theme toggle works and persists to LocalStorage.",
+    "Day Lock and partial-completion lock behavior passed automated flow tests.",
+    "All exercise JPG images and SVG fallbacks exist; no duplicate JPG image files found."
+  ]
+}

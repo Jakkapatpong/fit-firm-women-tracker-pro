@@ -1,0 +1,122 @@
+Fit & Firm Women Tracker Pro - Professional QA Test Report
+วันที่ทดสอบ: 2026-06-10
+เวอร์ชันทดสอบ: v12_icon_only_bottomnav
+
+ผลรวม:
+- Automated functional checks: 38 ผ่าน / 0 ไม่ผ่าน
+- JavaScript syntax: PASS
+- Local asset reference scan: PASS
+- Exercise JPG duplicate scan: PASS
+- Critical issues: 0
+
+ขอบเขตที่ทดสอบ:
+1. โครงสร้างไฟล์หลัก
+   - index.html
+   - style.css
+   - script.js
+   - images/branding/
+   - images/exercises/
+   - README.txt / TEST_REPORT.txt
+
+2. Navigation / UI
+   - หน้า Today
+   - หน้า Program
+   - หน้า Phase list
+   - หน้า Day detail
+   - หน้า Exercise detail
+   - หน้า Report
+   - หน้า Profile
+   - Bottom navigation แบบ icon-only
+   - aria-label/title ของ bottom navigation
+
+3. Theme
+   - ค่าเริ่มต้น light mode
+   - กด toggle เป็น dark mode
+   - กดกลับเป็น light mode
+   - บันทึก theme ลง LocalStorage
+   - Profile มีปุ่มสลับ แบบเดิม / โหมดมืด
+
+4. Program Logic
+   - Day 2 ถูกล็อกก่อน Day 1 ทำครบ
+   - ปุ่มเริ่มของวันที่ล็อกเป็น disabled
+   - Day 1 ทำครบแล้วปลดล็อก Day 2
+   - Day 2 บันทึกเป็น “ทำบางส่วน” แล้ว Day 3 ยังล็อกอยู่
+   - Phase 2 unlock ผ่านเมื่อครบเงื่อนไข 70% + progress 2 ครั้ง + ไม่มีอาการเจ็บหนัก
+   - Phase 3 ยังล็อกถ้าเงื่อนไข Phase 2 ยังไม่ครบ
+
+5. Readiness Check
+   - Green logic
+   - Yellow logic
+   - Red logic
+   - หน้า readiness เปิดก่อนเริ่ม workout
+
+6. Workout Player
+   - เริ่ม Player ได้
+   - ข้าม countdown / เข้า exercise
+   - ทำเสร็จ / ข้ามท่า / พัก
+   - ไปถึง Finish Screen
+   - Finish Form มีช่อง weight/waist/hip/pain/note
+
+7. Save / LocalStorage
+   - Save Workout แบบ complete
+   - Save Workout แบบ partial
+   - Save Progress จาก Finish
+   - Save Manual Progress
+   - Save Settings
+   - Reset ล้างข้อมูลได้
+
+8. Export
+   - Export JSON
+   - Export CSV
+
+9. Images / Assets
+   - EX image path ทุกไฟล์มีอยู่จริง
+   - SVG fallback ทุกไฟล์มีอยู่จริง
+   - Logo PNG มีอยู่จริง
+   - Favicon PNG มีอยู่จริง
+   - ไม่พบ JPG รูปท่าออกกำลังกายซ้ำกัน
+   - ไม่พบ local reference ที่หายไป
+
+รายละเอียดผล automated checks:
+- [PASS] Initial render: home view present
+- [PASS] Bottom nav has 4 buttons
+- [PASS] Bottom nav is icon-only visually
+- [PASS] Bottom nav buttons have aria-labels
+- [PASS] Theme toggle exists on home
+- [PASS] Default theme is light
+- [PASS] Theme toggle switches to dark
+- [PASS] Theme saved to localStorage
+- [PASS] Theme can switch back to light
+- [PASS] Profile includes theme segment
+- [PASS] All EX image paths exist
+- [PASS] All SVG fallbacks exist
+- [PASS] Logo PNG exists
+- [PASS] Favicon PNG exists
+- [PASS] Program page renders all 3 phases
+- [PASS] Day 2 locked before Day 1 complete
+- [PASS] Locked day CTA is disabled
+- [PASS] Readiness green logic
+- [PASS] Readiness yellow logic
+- [PASS] Readiness red logic
+- [PASS] Readiness page opens for Day 1
+- [PASS] Workout player starts
+- [PASS] Workout player has image fallback markup
+- [PASS] Workout reaches finish screen
+- [PASS] Finish form fields exist
+- [PASS] Day 1 saved complete in LocalStorage
+- [PASS] Progress measurement saved from finish
+- [PASS] After Day 1 complete, Today moves to Day 2
+- [PASS] Second workout can reach finish
+- [PASS] Day 2 saved partial
+- [PASS] Day 3 remains locked after Day 2 partial
+- [PASS] Settings saved
+- [PASS] Manual progress saved
+- [PASS] Report page shows training history
+- [PASS] Export JSON and CSV trigger downloads
+- [PASS] Phase 2 unlocks when 70% + 2 progress + no severe pain
+- [PASS] Phase 3 stays locked without phase 2 completion
+- [PASS] Reset clears LocalStorage state
+
+ข้อสรุป:
+ระบบผ่านการทดสอบหลักครบตาม flow ใช้งานจริง ไม่พบ bug ระดับ critical หรือ blocker ในรอบนี้
+แพ็กนี้เพิ่มไฟล์ QA_RESULTS_v13_PRO.json และ TEST_REPORT_PRO_v13.txt เพื่อใช้ตรวจสอบย้อนหลัง

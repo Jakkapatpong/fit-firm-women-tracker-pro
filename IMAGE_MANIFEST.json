@@ -1,0 +1,70 @@
+{
+  "exact_generated": [
+    "bicep-curl",
+    "breathing",
+    "calf-raise",
+    "dead-bug",
+    "dumbbell-row",
+    "full-body-circuit",
+    "glute-bridge",
+    "goblet-squat",
+    "hula-hoop",
+    "kettlebell-deadlift",
+    "kettlebell-swing",
+    "kickback",
+    "knee-raise",
+    "lateral-raise",
+    "low-impact-circuit",
+    "march-in-place",
+    "plank",
+    "rest-day",
+    "reverse-lunge",
+    "romanian-deadlift",
+    "russian-twist",
+    "shoulder-press",
+    "side-leg-raise",
+    "side-plank",
+    "standing-core-twist",
+    "standing-side-bend",
+    "step-touch",
+    "step-up",
+    "stretching",
+    "sumo-squat",
+    "tricep-extension",
+    "wall-pushup"
+  ],
+  "fallback_category_mapping": {},
+  "note": "Full image audit completed in v5. Replaced all previously duplicated or fallback exercise thumbnails with exercise-specific visuals. fallback_category_mapping is now empty because all exercise cards have dedicated JPG assets.",
+  "derived_from_composite_sheets": {
+    "sumo_stepup_calf_sideleg": [
+      "sumo-squat",
+      "step-up",
+      "calf-raise",
+      "side-leg-raise"
+    ],
+    "kickback_wallpush_curl_tricep": [
+      "kickback",
+      "wall-pushup",
+      "bicep-curl",
+      "tricep-extension"
+    ],
+    "lateral_sideplank_twist_kneeraise": [
+      "lateral-raise",
+      "side-plank",
+      "standing-core-twist",
+      "knee-raise"
+    ],
+    "steptouch_kbdeadlift_kbswing_fullbody": [
+      "step-touch",
+      "kettlebell-deadlift",
+      "kettlebell-swing",
+      "full-body-circuit"
+    ],
+    "low_rest_breath_stretch": [
+      "low-impact-circuit",
+      "rest-day",
+      "breathing",
+      "stretching"
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "checks": [
+    {
+      "name": "Home rendered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Logo file exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bottom nav count 4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All exercise image files exist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 2 locked before Day 1 complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Locked CTA shown",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness screen opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Player starts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Finish screen reached",
+      "pass": true,
+      "detail": "<div class=\"topbar\"><button class=\"icon-btn\" onclick=\"go('today')\">‹</button><div class=\"topbar-title-wrap\"><img class=\"topbar-logo\" src=\"images/branding/logo-fit-firm.svg\" alt=\"Fit &amp; Firm logo\" loading=\"lazy\"><h2>Finish</h2></div><button class=\"icon-btn blank\"> </button></div><div class=\"page\">"
+    },
+    {
+      "name": "Finish form exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Report shown after save",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Saved complete appears in report",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 1 log in storage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Next required day is 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Second finish reached",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 3 remains locked after Day 2 partial",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Settings saved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual progress saved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Export JSON/CSV triggered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness green logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness yellow logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Readiness red logic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase 2 unlock logic passes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase 3 still locked without enough phase 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset clears storage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No duplicate JPG exercise images",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "downloads": [
+    {
+      "kind": "blob",
+      "type": "application/json"
+    },
+    {
+      "kind": "download",
+      "name": "fit-firm-women-tracker-data.json",
+      "href": "blob:mock"
+    },
+    {
+      "kind": "blob",
+      "type": "text/csv;charset=utf-8"
+    },
+    {
+      "kind": "download",
+      "name": "fit-firm-women-tracker-data.csv",
+      "href": "blob:mock"
+    }
+  ]
+}

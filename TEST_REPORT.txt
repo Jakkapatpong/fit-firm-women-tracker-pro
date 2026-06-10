@@ -1,0 +1,93 @@
+Fit & Firm Women Tracker Pro V2 - Test Report
+
+ตรวจแล้วก่อนแพ็ก ZIP:
+[PASS] โครงสร้างไฟล์ครบ: index.html, style.css, script.js, README.txt, images/exercises/
+[PASS] JavaScript syntax ผ่านด้วย node --check
+[PASS] มีข้อมูลโปรแกรมครบ 12 สัปดาห์ / 84 วัน / 3 Phase
+[PASS] มี Day Lock: วันถัดไปเริ่มไม่ได้ถ้าวันก่อนหน้ายังไม่เป็น “ทำครบ”
+[PASS] มี Overdue Counter: แสดง “ค้าง Day X มา Y วัน”
+[PASS] มี Phase Unlock: Phase 2 / 3 ตรวจเงื่อนไขก่อนปลดล็อก
+[PASS] มี Readiness Check: Green / Yellow / Red
+[PASS] Yellow Mode ลดความหนักลงประมาณ 30%
+[PASS] Red Mode เปลี่ยนเป็น Recovery Mode
+[PASS] Workout Player มี Ready Countdown, Exercise, Rest, +20s, Skip, Back, Finish
+[PASS] Save Log รองรับ ทำครบ / ทำบางส่วน / ไม่ได้ทำ
+[PASS] Progress Tracking รองรับน้ำหนัก เอว สะโพก ต้นขา แขน รูป progress อาการเจ็บ หมายเหตุ
+[PASS] Export JSON / CSV
+[PASS] LocalStorage key: fitFirmWomenTrackerPro.v2
+[PASS] CSS เป็น Mobile-first และจำกัดความกว้าง app ไม่ให้ล้นจอ
+
+ข้อจำกัดการทดสอบ:
+- ทดสอบ syntax และ static structure ใน sandbox ได้ครบ
+- การเปิด browser headless ถูกจำกัดโดย sandbox policy จึงไม่ได้บันทึก screenshot runtime จาก Chromium
+
+
+V3 IMAGE UPDATE TEST
+- Checked generated JPG files exist in images/exercises/.
+- Checked script.js points to JPG files for every exercise image path.
+- Checked hero image uses hula-hoop.jpg.
+- Checked thumbnail CSS square layout to avoid incorrect cropped stick-figure look.
+- Checked JS syntax with node --check.
+
+
+[Image Correction Update v4]
+- Fixed duplicate thumbnails that were visually incorrect.
+- Replaced Dead Bug, Standing Side Bend, Stretching & Mobility, and Breathing Reset with correct exercise-specific images.
+- No script logic changes required because file paths already pointed to the correct filenames; only the image assets were replaced.
+
+
+[Full Image Audit Update v5]
+- Reviewed the full exercise image set in detail.
+- Replaced every remaining duplicated/fallback thumbnail with dedicated exercise-specific artwork.
+- Updated the following sets: sumo-squat, step-up, calf-raise, side-leg-raise, kickback, wall-pushup, bicep-curl, tricep-extension, lateral-raise, side-plank, standing-core-twist, knee-raise, step-touch, kettlebell-deadlift, kettlebell-swing, full-body-circuit, low-impact-circuit, rest-day, breathing, stretching.
+- Cleared fallback mappings in IMAGE_MANIFEST.json because each exercise now has its own JPG asset.
+- No JavaScript logic changes were required; asset correctness was fixed at the image-file level.
+
+
+[Comprehensive Audit & Logo Update v6]
+- Re-tested core flows in a simulated DOM environment: navigation, day lock, readiness, workout player, finish/save, manual progress, exports, reset, and phase unlock logic.
+- Verified all exercise JPG files exist and no duplicate JPG assets remain.
+- Added branding/logo assets and UI integration.
+- Added image fallback behavior to improve resilience if a JPG asset fails to load.
+
+
+[Logo Fix Update v7]
+- Fixed invalid SVG XML by escaping the ampersand in the logo aria-label.
+- Added PNG logo fallback at images/branding/logo-fit-firm.png.
+- Updated topbar/home logo images to use PNG first with SVG fallback on error.
+- Updated favicon to use PNG for broader compatibility.
+
+
+[Logo Refresh Update v8]
+- Replaced the old logo with a new, more polished feminine fitness logo.
+- Updated main branding asset: images/branding/logo-fit-firm.png
+- Added a dedicated favicon: images/branding/favicon-fit-firm.png
+- Existing app references continue working with the refreshed logo automatically.
+
+
+[Minimal UI Icon Refresh v9]
+- Refined UI icons to a cleaner modern minimal style using inline SVG icons.
+- Updated bottom navigation, top bars, phase cards, and day cards.
+- Replaced text-based arrows / symbols with consistent icon chips and status icons.
+- Improved visual hierarchy for Program, Phase, and Day screens.
+
+
+[Elegant Minimal Refinement v10]
+- Softened the icon-heavy v9 design to better match the earlier cleaner aesthetic.
+- Restored logo-based topbar titles for a more premium feminine look.
+- Refined bottom navigation, phase cards, and day cards with subtler icon treatments.
+- Reduced icon weight and card noise while keeping the modern minimal SVG system.
+
+
+[Theme + Typography Update v11]
+- Reduced bottom tab bar height and made icon/label sizing more compact.
+- Upgraded typography to a cleaner Sarabun + Plus Jakarta Sans pairing.
+- Added dark mode / original mode toggle in the top bar and Profile settings.
+- Added persistent theme preference using LocalStorage.
+
+
+[Bottom Nav Icon-Only Update v12]
+- Converted the bottom tab bar to an icon-only layout for a cleaner look.
+- Added aria-label and title attributes to keep navigation accessible.
+- Reduced bottom navigation height again and tightened spacing.
+- Added icon-chip active states for both light and dark modes.
